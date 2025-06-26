@@ -64,8 +64,8 @@ http://<EC2-Public-IP>
 
 🖼 Screenshot
 ## 🖼 Screenshot
+![Lab 8 Screenshot](ansible_dynamic_inventory/readpic.PNG)
 
-![Lab 8 Screenshot](readpic.PNG)
 
 
 
