@@ -1,0 +1,38 @@
+- name: Deploy Nginx with custom page
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: Install Nginx
+      yum:
+        name: nginx
+        state: present
+
+    - name: Start and enable Nginx
+      service:
+        name: nginx
+        state: started
+        enabled: yes
+
+    - name: Create custom index.html
+      copy:
+        dest: /usr/share/nginx/html/index.html
+        content: |
+          <html>
+            <head>
+              <title>Welcome</title>
+              <style>
+                body {
+                  background-color: #101820;
+                  color: #FEE715;
+                  font-family: Arial, sans-serif;
+                  text-align: center;
+                  padding-top: 100px;
+                }
+              </style>
+            </head>
+            <body>
+              <h1>Mohamed Anter</h1>
+              <h2>DevOps Trainee at iVolve</h2>
+            </body>
+          </html>
