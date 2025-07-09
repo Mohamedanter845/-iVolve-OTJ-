@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-pod
+  namespace: ivolve
+spec:
+  containers:
+  - name: nginx
+    image: nginx
