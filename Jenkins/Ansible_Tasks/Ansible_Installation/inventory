@@ -1,3 +1,0 @@
-[managed]
-192.168.254.133 ansible_user=mohamedanter ansible_become=true ansible_become_password=M251282306
-

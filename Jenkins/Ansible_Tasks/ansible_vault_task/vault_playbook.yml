@@ -1,6 +1,0 @@
-- name: Use Vault Variable Example
-  hosts: managed
-  tasks:
-    - name: Show the Vault password
-      debug:
-        msg: "The MySQL password is: {{ mysql_password }}"

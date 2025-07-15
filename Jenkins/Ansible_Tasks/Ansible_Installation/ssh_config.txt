@@ -1,4 +1,0 @@
-Host ivolve
-    HostName 192.168.254.133
-    User mohamedanter
-    IdentityFile ~/.ssh/id_rsa

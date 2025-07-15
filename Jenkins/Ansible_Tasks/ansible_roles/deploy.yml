@@ -1,9 +1,0 @@
----
-- name: Install Docker, Jenkins, and kubectl on managed node
-  hosts: managed
-  become: true
-
-  roles:
-    - docker
-    - jenkins
-    - kubectl
